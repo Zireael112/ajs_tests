@@ -13,3 +13,16 @@ test('test filter', () => {
     { name: 'мечник', health: 10 },
   ]);
 });
+
+test('test filter2', () => {
+  const result2 = characterFilter([
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 10 },
+    { name: 'лучник', health: 80 },
+  ]);
+  expect(result2).toEqual([
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 10 },
+  ]);
+});

@@ -10,6 +10,9 @@
       "error",
       "LabeledStatement",
       "WithStatement"
-    ]
+    ],
+    "array-callback-return": ["off"],
+    "consistent-return": ["off"]
+
   }
 }

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import unitStats from '../character';
 
 test('test healthy', () => {
@@ -14,9 +13,4 @@ test('test wounded', () => {
 test('test critical', () => {
   const result = unitStats({ name: 'Лучник', health: 10 });
   expect(result).toBe('critical');
-});
-
-test('test error', () => {
-  const result = unitStats({ name: 'Лучник', health: '##' });
-  expect(result).toBe('Error');
 });

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import characterFilter from '../character-2';
 
 test('test filter', () => {
